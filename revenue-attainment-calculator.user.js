@@ -60,8 +60,9 @@ function work() {
         const innerSpan = document.createElement("span");
         innerSpan.innerText = ` (${asPercentage})`;
         innerSpan.style.color = calculateColor(attainment);
+        innerSpan.style.marginLeft = "5px";
         span.appendChild(innerSpan);
-        
+
         span.classList.add("has-attainment");
     })
 }
