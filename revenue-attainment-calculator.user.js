@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Revenue Attainment Calculator
 // @namespace    https://github.com/bmbkr/portal-user-scripts
-// @version      2024-11-04
+// @version      1.0.4
 // @description  Show revenue attainment in the POS page on Portal.
 // @author       Brandon Baker <brandon@niea.me>
 // @match        https://portal.ubif.net/*
