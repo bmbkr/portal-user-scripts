@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Revenue Attainment Calculator
 // @namespace    https://github.com/bmbkr/portal-user-scripts
-// @version      2024-11-03
+// @version      2024-11-04
 // @description  Show revenue attainment in the POS page on Portal.
 // @author       Brandon Baker <brandon@niea.me>
 // @match        https://portal.ubif.net/*
@@ -57,9 +57,10 @@ function work() {
             return;
         }
 
-        const textNode = document.createTextNode(` (${asPercentage})`);
-        textNode.style.color = calculateColor(attainment);
-        span.appendChild(textNode);
+        const innerSpan = document.createElement("span");
+        innerSpan.innerText = ` (${asPercentage})`;
+        innerSpan.style.color = calculateColor(attainment);
+        span.appendChild(innerSpan);
         
         span.classList.add("has-attainment");
     })
